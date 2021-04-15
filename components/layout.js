@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Header from './header';
+import Footer from './footer';
 
 export default function Layout({ children }) {
     return (
@@ -8,7 +10,9 @@ export default function Layout({ children }) {
                 <title>HomePage demo</title>
             </Head>
             <div className='min-h-screen bg-gray-300'>
+                <Header />
                 {children}
+                <Footer />
             </div>
         </div>
     );

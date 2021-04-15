@@ -16,10 +16,26 @@ const Banner = () => (
 
             {/* buttons */}
             <div className='mt-10 flex justify-center items-center w-full mx-auto'>
-                <Button >Get started</Button>
+                <Button ><img className='h-30 w-28' src='AppStore.svg' alt='Apple' width={48} height={48} /></Button>
                 <span className='mx-2'>or</span>
-                <Button>Contact us</Button>
+                <Button ><img className='h-30 w-30' src='GooglePlay.svg' alt='Google' /></Button>
             </div>
+
+            {/* svg icons */}
+            <div className='flex justify-center w-full'>
+                <div className='mt-4 wu-full'>
+                    <p className='font-mono uppercase text-center text-sm text-gray-600'>Get it</p>
+                    <div className='flex items-center justify-center mx-auto flex-wrap'>
+                        <img className='w-24 h-24 m-12 mb-8' src='cpu.svg' alt='cpu' />
+                        <img className='w-24 h-24 m-12' src='innovation.svg' alt='cpu' />
+                        <img className='w-24 h-24 m-12' src='network.svg' alt='cpu' />
+                        <img className='w-24 h-24 m-12' src='project-management.svg' alt='cpu' />
+                    </div>
+                </div>
+            </div>
+
+
+
 
         </div>
     </header>

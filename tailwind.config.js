@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'ramab': ['Ramabhadra'],
-        // 'ramab': ['Ramabhadra'],
-        // 'ramab': ['Ramabhadra'],
+        'nunito': ['Nunito'],
+        'montserrat': ['Montserrat'],
       },
       minHeight: {
         '0': '0',
