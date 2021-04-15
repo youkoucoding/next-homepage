@@ -18,7 +18,7 @@ const Footer = () => (
         <div className='max-w-7xl mx-auto text-gray-400 px-8 lg:px-0 flex flex-wrap'>
             <div className='mb-14 flex items-center w-full'>
                 <img className='h-12 w-12 mr-12' src='logo.svg' alt='logo' />
-                <p className='text-4xl text-yellow-500 font-bold font-montserrat'>Demonstration</p>
+                <p className='text-4xl text-primitive font-bold font-montserrat'>Demonstration</p>
             </div>
             <div className='w-full lg:w-1/2'>
                 <ul className='text-lg font-light font-ramab flex flex-wrap w-full'>
@@ -26,8 +26,8 @@ const Footer = () => (
                         <div>
                             <h4 className='text-gray-900 text-base font-bold mb-1'>Product</h4>
                             <ul>
-                                {productLinks.map((link) => (
-                                    <li className='text-gray-800 text-sm font-medium leading-6' key={link}>
+                                {productLinks.map((link, index) => (
+                                    <li className='text-gray-800 text-sm font-medium leading-6' key={index}>
                                         <a href="/">{link}</a>
                                     </li>
                                 ))}
@@ -38,8 +38,8 @@ const Footer = () => (
                         <div>
                             <h4 className='text-gray-900 text-base font-bold mb-1'>Resources</h4>
                             <ul>
-                                {resourceLinks.map((link) => (
-                                    <li className='text-gray-800 text-sm font-medium leading-6' key={link}>
+                                {resourceLinks.map((link, index) => (
+                                    <li className='text-gray-800 text-sm font-medium leading-6' key={index}>
                                         <a href="/">{link}</a>
                                     </li>
                                 ))}
@@ -50,8 +50,8 @@ const Footer = () => (
                         <div>
                             <h4 className='text-gray-900 text-base font-bold mb-1'>About Us</h4>
                             <ul>
-                                {aboutLinks.map((link) => (
-                                    <li className='text-gray-800 text-sm font-medium leading-6' key={link}>
+                                {aboutLinks.map((link, index) => (
+                                    <li className='text-gray-800 text-sm font-medium leading-6' key={index}>
                                         <a href="/">{link}</a>
                                     </li>
                                 ))}

@@ -16,6 +16,17 @@ module.exports = {
         'full': '100%',
       },
     },
+    colors: {
+      primitive: {
+        dark: '#43955f',
+        DEFAULT: '#83d271',
+        light: '#85d472',
+      },
+      secondary: {
+        DEFAULT: '#f3cd81',
+        light: '#fce498',
+      },
+    },
     variants: {
       extend: {},
     },
