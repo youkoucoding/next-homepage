@@ -1,5 +1,6 @@
 import Layout from '../components/layout';
 import Header from '../components/header';
+import Banner from '../components/banner';
 
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
     <Layout>
       <div className='bg-gray-300 min-h-screen'>
         <Header />
-        <div className='text-6xl font-bold font-ramab'>hello world!</div>
+        <Banner />
       </div>
     </Layout>
   );
