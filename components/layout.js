@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Header from './header';
+import Navigator from './navigator';
 import Footer from './footer';
 
 export default function Layout({ children }) {
@@ -9,8 +9,8 @@ export default function Layout({ children }) {
                 <link rel="icon" href="/favicon.ico" />
                 <title>HomePage demo</title>
             </Head>
-            <div className='min-h-screen bg-gray-300'>
-                <Header />
+            <div className='min-h-screen'>
+                <Navigator />
                 {children}
                 <Footer />
             </div>

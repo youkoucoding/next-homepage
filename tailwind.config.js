@@ -15,16 +15,18 @@ module.exports = {
         '3/4': '75%',
         'full': '100%',
       },
+      backgroundImage: theme => ({
+        'hero-pattern': "url('/green-background.jpg')",
+      }),
     },
     colors: {
       primitive: {
-        dark: '#43955f',
-        DEFAULT: '#83d271',
-        light: '#85d472',
+        dark: '#ea9235',
+        DEFAULT: '#f3a43a',
+        light: '#fad882',
       },
       secondary: {
-        DEFAULT: '#f3cd81',
-        light: '#fce498',
+        DEFAULT: '#bdcb4d',
       },
     },
     variants: {

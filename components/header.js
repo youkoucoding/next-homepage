@@ -1,85 +1,44 @@
-import Link from "next/link";
-import { useState, useEffect } from 'react';
+import Button from './button';
 
+const Header = () => (
+    <header className='bg-white'>
+        <div className='bg-gray-100 min-h-full'>
+            <div className='max-w-4xl mx-auto py-16 px-14 sm:px-6 lg:px-8'>
+                <h1 className='font-sans font-bold text-4xl md:text-5xl lg:text-8xl text-center leading-snug text-gray-800'>
+                    Your website, beyond expectations
+                </h1>
+            </div>
+            <div className='max-w-xl mx-auto'>
+                <p className='mt-10 text-gray-500 text-center text-xl lg:text-3xl'>
+                    Make your website wonderful and build beyond your expectations.
+                </p>
+            </div>
 
-const links = [
-    {
-        label: `Features`,
-        href: `/`,
-    },
-    {
-        label: `Testimonials`,
-        href: `/`,
-    },
-    {
-        label: `Pricing`,
-        href: `/`,
-    },
-    {
-        label: `Blog`,
-        href: `/`,
-    },
-    {
-        label: `About`,
-        href: `/`,
-    },
-];
+            {/* buttons */}
+            <div className='mt-10 flex justify-center items-center w-full mx-auto'>
+                <Button ><img className='h-30 w-28' src='AppStore.svg' alt='Apple' width={48} height={48} /></Button>
+                <span className='mx-2'>or</span>
+                <Button ><img className='h-30 w-30' src='GooglePlay.svg' alt='Google' /></Button>
+            </div>
 
-const Header = () => {
-
-    const [offset, setOffset] = useState(0);
-
-
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            setOffset(window.pageYOffset);
-        });
-    }, []);
-
-
-    return (
-        <div className={`sticky top-0 left-0 right-0 transition-colors duration-400 ease-linear shadow bg-${offset > 55 ? 'secondary' : 'white'}`}>
-            <nav className='max-w-full mx-auto px-4 sm:px-6 lg:px-8'>
-                <div className='flex items-center justify-between flex-wrap h-24'>
-
-                    {/* logos & pages */}
-                    <div className='flex items-center ml-10'>
-                        <div className='flex-shrink-0'>
-                            <img className='h-12 w-12' src='logo.svg' alt='logo' width={48} height={48} />
-                        </div>
-                        <div className='hidden md:block'>
-                            <div className='ml-10 flex items-baselines space-x-4'>
-                                {links.map((link) => (
-                                    <Link href={link.href}>
-                                        <a
-                                            key={link.label}
-                                            className='text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md font-medium font-ramab'
-                                        >
-                                            {link.label}
-                                        </a>
-                                    </Link>
-                                ))}
-
-                            </div>
-                        </div>
+            {/* svg icons */}
+            <div className='flex justify-center w-full'>
+                <div className='mt-4 wu-full'>
+                    <p className='font-mono uppercase text-center text-sm text-gray-600'>Get it</p>
+                    <div className='flex items-center justify-center mx-auto flex-wrap'>
+                        <img className='w-24 h-24 m-12 mb-8' src='cpu.svg' alt='cpu' />
+                        <img className='w-24 h-24 m-12' src='innovation.svg' alt='cpu' />
+                        <img className='w-24 h-24 m-12' src='network.svg' alt='cpu' />
+                        <img className='w-24 h-24 m-12' src='project-management.svg' alt='cpu' />
                     </div>
-
-                    {/* logos & pages  ends*/}
-
-                    {/* App buttons */}
-
-                    <div className='hidden md:block'>
-                        <div className='ml-4 flex items-center md:ml-6 mr-10'>
-                            <img className='w-28' src='AppStore.svg' alt='Apple' width={48} height={48} />
-                            <img className='w-32 ml-5' src='GooglePlay.svg' alt='Apple' width={48} height={48} />
-                        </div>
-                    </div>
-                    {/* App buttons ends */}
-
                 </div>
-            </nav>
+            </div>
+
+
+
+
         </div>
-    );
-};
+    </header>
+);
 
 export default Header;

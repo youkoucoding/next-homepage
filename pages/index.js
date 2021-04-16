@@ -1,12 +1,12 @@
 import Layout from '../components/layout';
-import Banner from '../components/banner';
+import Header from '../components/header';
 
 
 export default function Home() {
   return (
     <Layout>
       <main>
-        <Banner />
+        <Header />
       </main>
     </Layout>
   );

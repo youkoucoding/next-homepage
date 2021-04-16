@@ -80,6 +80,7 @@ const Footer = () => (
                         <Button>Subscribe</Button>
                     </div>
                 </div>
+                <div className='mt-3'>Icons made by <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm" className='text-secondary'>ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon" className='text-primitive-dark'>www.flaticon.com</a></div>
             </div>
         </div>
     </footer>
