@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useState, useEffect } from 'react';
 
 
 const links = [
@@ -25,10 +26,21 @@ const links = [
 ];
 
 const Header = () => {
+
+    const [offset, setOffset] = useState(0);
+
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            setOffset(window.pageYOffset);
+        });
+    }, []);
+
+
     return (
-        <nav className='bg-white'>
-            <div className='max-w-full mx-auto px-4 sm:px-6 lg:px-8'>
-                <div className='flex items-center justify-between h-24'>
+        <div className={`sticky top-0 left-0 right-0 transition-colors duration-400 ease-linear shadow bg-${offset > 55 ? 'secondary' : 'white'}`}>
+            <nav className='max-w-full mx-auto px-4 sm:px-6 lg:px-8'>
+                <div className='flex items-center justify-between flex-wrap h-24'>
 
                     {/* logos & pages */}
                     <div className='flex items-center ml-10'>
@@ -52,19 +64,21 @@ const Header = () => {
                         </div>
                     </div>
 
+                    {/* logos & pages  ends*/}
+
                     {/* App buttons */}
 
                     <div className='hidden md:block'>
                         <div className='ml-4 flex items-center md:ml-6 mr-10'>
-                            <img className='h-30 w-28' src='AppStore.svg' alt='Apple' width={48} height={48} />
-                            <img className='h-32 w-32 ml-5' src='GooglePlay.svg' alt='Apple' width={48} height={48} />
+                            <img className='w-28' src='AppStore.svg' alt='Apple' width={48} height={48} />
+                            <img className='w-32 ml-5' src='GooglePlay.svg' alt='Apple' width={48} height={48} />
                         </div>
                     </div>
-
+                    {/* App buttons ends */}
 
                 </div>
-            </div>
-        </nav >
+            </nav>
+        </div>
     );
 };
 

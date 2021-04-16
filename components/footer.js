@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Button from './button';
 
 const productLinks = [`Features`, `Customers`, `Platform`, `Pricing`, `Enterprise`, `What's new?`];
@@ -27,9 +28,11 @@ const Footer = () => (
                             <h4 className='text-gray-900 text-base font-bold mb-1'>Product</h4>
                             <ul>
                                 {productLinks.map((link, index) => (
-                                    <li className='text-gray-800 text-sm font-medium leading-6' key={index}>
-                                        <a href="/">{link}</a>
-                                    </li>
+                                    <div className='text-gray-800 text-sm font-medium leading-6' key={index}>
+                                        <Link href="/">
+                                            <a >{link}</a>
+                                        </Link>
+                                    </div>
                                 ))}
                             </ul>
                         </div>
@@ -39,9 +42,11 @@ const Footer = () => (
                             <h4 className='text-gray-900 text-base font-bold mb-1'>Resources</h4>
                             <ul>
                                 {resourceLinks.map((link, index) => (
-                                    <li className='text-gray-800 text-sm font-medium leading-6' key={index}>
-                                        <a href="/">{link}</a>
-                                    </li>
+                                    <div className='text-gray-800 text-sm font-medium leading-6' key={index}>
+                                        <Link href="/">
+                                            <a >{link}</a>
+                                        </Link>
+                                    </div>
                                 ))}
                             </ul>
                         </div>
@@ -51,9 +56,11 @@ const Footer = () => (
                             <h4 className='text-gray-900 text-base font-bold mb-1'>About Us</h4>
                             <ul>
                                 {aboutLinks.map((link, index) => (
-                                    <li className='text-gray-800 text-sm font-medium leading-6' key={index}>
-                                        <a href="/">{link}</a>
-                                    </li>
+                                    <div className='text-gray-800 text-sm font-medium leading-6' key={index}>
+                                        <Link href="/">
+                                            <a >{link}</a>
+                                        </Link>
+                                    </div>
                                 ))}
                             </ul>
                         </div>
