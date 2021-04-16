@@ -17,7 +17,7 @@ const resourceLinks = [
 const Footer = () => (
     <footer className='bg-white border-t border-gray-400 pt-14 pb-16'>
         <div className='max-w-7xl mx-auto text-gray-400 px-8 lg:px-0 flex flex-wrap'>
-            <div className='mb-14 flex items-center w-full'>
+            <div className='mb-14 flex flex-wrap items-center w-full'>
                 <img className='h-12 w-12 mr-12' src='logo.svg' alt='logo' />
                 <p className='text-4xl text-primitive font-bold font-montserrat'>Demonstration</p>
             </div>

@@ -1,7 +1,7 @@
 import Button from './button';
 
 const Header = () => (
-    <header className='bg-white'>
+    <header className='bg-gradient-to-t from-secondary to-white'>
         <div className='bg-gray-100 min-h-full'>
             <div className='max-w-4xl mx-auto py-16 px-14 sm:px-6 lg:px-8'>
                 <h1 className='font-sans font-bold text-4xl md:text-5xl lg:text-8xl text-center leading-snug text-gray-800'>
@@ -24,7 +24,6 @@ const Header = () => (
             {/* svg icons */}
             <div className='flex justify-center w-full'>
                 <div className='mt-4 wu-full'>
-                    <p className='font-mono uppercase text-center text-sm text-gray-600'>Get it</p>
                     <div className='flex items-center justify-center mx-auto flex-wrap'>
                         <img className='w-24 h-24 m-12 mb-8' src='cpu.svg' alt='cpu' />
                         <img className='w-24 h-24 m-12' src='innovation.svg' alt='cpu' />
