@@ -23,8 +23,8 @@ const ListSection = () => (
   <section className='lg:py-28 pt-28 overflow-hidden'>
     <div className='max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white'>
       <div className='mb-16 text-center'>
-        <h2 className='text-base text-indigo-600 font-semibold tracking-wide uppercase'>Grow your revenue</h2>
-        <p className='mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900'>
+        <h2 className='text-base text-primitive font-semibold tracking-wide uppercase'>Grow your revenue</h2>
+        <p className='mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-800'>
           Transform your business
         </p>
       </div>
@@ -37,7 +37,7 @@ const ListSection = () => (
                   <span
                     className='flex w-16 h-16 mx-auto items-center
                       justify-center text-2xl font-bold rounded-full
-                      bg-blue-50 text-blue-500'
+                      bg-blue-50 text-primitive'
                   >
                     {index + 1}
                   </span>
