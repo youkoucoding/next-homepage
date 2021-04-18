@@ -1,8 +1,8 @@
 import Button from './button';
 
 const Header = () => (
-  <header className='bg-gradient-to-t from-secondary to-white'>
-    <div className='bg-gray-100 min-h-full'>
+  <header className='bg-gradient-to-t from-secondary to-opacity'>
+    <div className='min-h-full'>
       <div className='max-w-4xl mx-auto py-16 px-14 sm:px-6 lg:px-8'>
         <h1 className='font-sans font-bold text-4xl md:text-5xl lg:text-8xl text-center leading-snug text-gray-800'>
           Your website, beyond expectations

@@ -18,17 +18,18 @@ module.exports = {
       backgroundImage: theme => ({
         'hero-pattern': "url('/green-background.jpg')",
       }),
-    },
-    colors: {
-      primitive: {
-        dark: '#ea9235',
-        DEFAULT: '#f3a43a',
-        light: '#fad882',
+      colors: {
+        primitive: {
+          dark: '#ea9235',
+          DEFAULT: '#f3a43a',
+          light: '#fad882',
+        },
+        secondary: {
+          DEFAULT: '#bdcb4d',
+        },
       },
-      secondary: {
-        DEFAULT: '#bdcb4d',
-      },
     },
+
     variants: {
       extend: {},
     },
