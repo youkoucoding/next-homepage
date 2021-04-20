@@ -15,8 +15,8 @@ const Card = () => {
             </div>
             <form className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
               <div className="min-w-0 flex-1">
-                <label for="cta_email" className="sr-only">Email address</label>
-                <input type="email" id="cta_email" placeholder="Your work email" name="email" className="block w-full border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 border-gray-300 focus:shadow-outline-blue focus:border-blue-300 shadow-sm border" />
+                <label for="email" className="sr-only">Email address</label>
+                <input type="email" id="email" placeholder="Your work Email" name="email" className="block w-full border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 border-gray-300 focus:shadow-outline-blue focus:border-blue-300 shadow-sm border" />
               </div>
               <div className="mt-4 sm:mt-0 sm:ml-3">
                 <button type="submit" className="block w-full rounded-md border border-transparent px-5 py-3 bg-gray-900 text-base font-medium text-white shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10">Request early access</button>

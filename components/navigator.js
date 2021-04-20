@@ -90,7 +90,7 @@ const Navigator = () => {
   }, []);
 
   return (
-    <div className={`sticky top-0 left-0 right-0 transition-colors duration-400 ease-linear shadow bg-${offset > 55 ? 'secondary' : 'white'}`}>
+    <div className={`sticky top-0 left-0 right-0 transition-colors duration-400 ease-linear shadow bg-${offset > 50 ? 'secondary' : 'white'}`}>
       <nav className='max-w-full mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between flex-wrap h-24'>
 

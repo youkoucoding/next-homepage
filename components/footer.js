@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Button from './button';
+import Button from './Button';
 
 const productLinks = [`Features`, `Customers`, `Platform`, `Pricing`, `Enterprise`, `What's new?`];
 const aboutLinks = [`About Us`, `Leadership`, `Blog`, `Events`, `Press`];

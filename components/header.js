@@ -1,4 +1,4 @@
-import Button from './button';
+import Button from './Button';
 
 const Header = () => (
   <header className='bg-gradient-to-t from-secondary to-opacity'>
