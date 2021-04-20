@@ -21,8 +21,8 @@ const Footer = () => (
         <img className='h-12 w-12 mr-12' src='logo.svg' alt='logo' />
         <p className='text-4xl text-primitive font-bold font-montserrat'>Demonstration</p>
       </div>
-      <div className='w-full lg:w-1/2'>
-        <ul className='text-lg font-light font-ramab flex flex-wrap w-full'>
+      <div className='w-full lg:w-1/2 font-quicksand'>
+        <ul className='text-lg font-light flex flex-wrap w-full'>
           <li className='w-1/2 md:w-1/3 lg:w-1/3'>
             <div>
               <h4 className='text-gray-900 text-base font-bold mb-1'>Product</h4>
@@ -30,7 +30,7 @@ const Footer = () => (
                 {productLinks.map((link, index) => (
                   <div className='text-gray-800 text-sm font-medium leading-6' key={index}>
                     <Link href="/">
-                      <a >{link}</a>
+                      <a>{link}</a>
                     </Link>
                   </div>
                 ))}

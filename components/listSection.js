@@ -24,11 +24,11 @@ const ListSection = () => (
     <div className='max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white'>
       <div className='mb-16 text-center'>
         <h2 className='text-base text-primitive font-semibold tracking-wide uppercase'>Grow your revenue</h2>
-        <p className='mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-800'>
+        <p className='mt-2 pb-4 text-5xl lg:text-7xl font-montserrat font-bold tracking-tight text-gray-800'>
           Transform your business
         </p>
       </div>
-      <div className='flex flex-wrap -mx-8 items-center'>
+      <div className='flex flex-wrap -mx-8 items-center font-quicksand'>
         <div className='w-full lg:w-1/2 px-8'>
           <ul className='space-y-12'>
             {listItems.map((item, index) => (

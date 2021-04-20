@@ -4,11 +4,11 @@ const GridFeature = () => (
       <div className='container mx-auto px-6 p-6 bg-white'>
         <div className='mb-16 text-center'>
           <h4 className='text-base text-primitive font-semibold tracking-wide uppercase'>Features</h4>
-          <p className='mt-2 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900'>
+          <p className='mt-2 text-5xl lg:text-7xl font-bold font-montserrat tracking-tight text-gray-900'>
             How we change the game
           </p>
         </div>
-        <div className='flex flex-wrap my-12'>
+        <div className='flex flex-wrap my-12 font-quicksand'>
           <div className='w-full border-b md:w-1/2 md:border-r lg:w-1/3 p-8'>
             <div className='flex items-center mb-6'>
               <img width={20} height={20} src='check.svg' className='h-6 w-6 text-primitive' />

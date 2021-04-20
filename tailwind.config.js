@@ -7,6 +7,8 @@ module.exports = {
         'ramab': ['Ramabhadra'],
         'nunito': ['Nunito'],
         'montserrat': ['Montserrat'],
+        'mincho': ['Shippori Mincho B1'],
+        'quicksand': ['Quicksand']
       },
       minHeight: {
         '0': '0',
