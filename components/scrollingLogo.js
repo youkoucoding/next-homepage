@@ -9,7 +9,7 @@ const ScrollingLogo = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 3 }}
+        transition={{ delay: 4, duration: 4 }}
         className='relative flex flex-nowrap overflow-hidden my-5 mx-10'>
         <div className='flex justify-between scroller'>
           {logos.map((logo, index) => (
