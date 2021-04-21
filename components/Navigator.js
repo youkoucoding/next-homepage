@@ -83,17 +83,18 @@ const Navigator = () => {
   const toggleMenu = () => setShowMenu(!showMenu);
   const [offset, setOffset] = useState(0);
 
+  const handleScroll = () => { setOffset(window.pageYOffset); };
+
+  // window is only in the browser
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      setOffset(window.pageYOffset);
-    });
-  }, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [offset]);
 
   return (
-    <div className={`sticky top-0 left-0 right-0 transition-colors duration-400 ease-linear shadow bg-${offset > 50 ? 'secondary' : 'white'}`}>
+    <div className={`sticky top-0 left-0 right-0 z-50 transition-colors duration-400 ease-linear shadow-lg bg-${offset > 50 ? 'primitive-dark' : 'white'}`}>
       <nav className='max-w-full mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between flex-wrap h-24'>
-
           {/* logos & pages */}
           <div className='flex items-center ml-10'>
             <div className='flex-shrink-0'>

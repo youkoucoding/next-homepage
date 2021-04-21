@@ -9,8 +9,8 @@ export default function Layout({ children }) {
         <title>HomePage demo</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navigator />
-      <main className='min-h-screen'>
+      <main>
+        <Navigator />
         {children}
       </main>
       <Footer />
