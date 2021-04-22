@@ -3,24 +3,24 @@ import { useState, useEffect } from 'react';
 
 const links = [
   {
-    label: `Link1`,
-    href: `/`,
+    label: `Solution`,
+    href: `/about`,
   },
   {
-    label: `Link2`,
-    href: `/`,
+    label: `Feature`,
+    href: `/about`,
   },
   {
-    label: `Link3`,
-    href: `/`,
+    label: `Contact`,
+    href: `/about`,
   },
   {
-    label: `Link4`,
-    href: `/`,
+    label: `About`,
+    href: `/about`,
   },
   {
-    label: `Link5`,
-    href: `/`,
+    label: `Media`,
+    href: `/about`,
   },
 ];
 
@@ -97,9 +97,12 @@ const Navigator = () => {
         <div className='flex items-center justify-between flex-wrap h-24'>
           {/* logos & pages */}
           <div className='flex items-center ml-10'>
-            <div className='flex-shrink-0'>
-              <img className='h-12 w-12' src='logo.svg' alt='logo' width={48} height={48} />
-            </div>
+            <a href='/'>
+              <div className='flex-shrink-0'>
+
+                <img className='h-12 w-12' src='logo.svg' alt='logo' width={48} height={48} />
+              </div>
+            </a>
             <div className='hidden md:block'>
               <div className='ml-10 flex items-baselines space-x-4'>
                 {links.map((link) => (
