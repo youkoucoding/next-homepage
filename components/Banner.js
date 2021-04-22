@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Banner = () => (
   <header className='bg-gradient-to-t from-secondary to-opacity'>
     <div className='min-h-full'>
-      <div className='max-w-4xl mx-auto mb-3 mt-12 py-8 px-14 sm:px-6 lg:px-8'>
+      <div className='max-w-4xl mx-auto mb-3 mt-24 py-8 px-14 sm:px-6 lg:px-8'>
         <h1 className='font-montserrat mb-3 mt-3 font-bold text-4xl md:text-5xl lg:text-7xl text-center leading-snug text-gray-800'>
           <motion.p animate={{ scale: 1.2 }} transition={{ delay: 4, duration: 0.5 }}>Your website, beyond expectations</motion.p>
         </h1>
