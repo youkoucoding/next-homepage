@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from 'react';
 import ButtonWithUnderline from './ButtonWithUnderline';
+import { motion } from 'framer-motion';
 
 export const links = [
   {
@@ -98,17 +99,23 @@ const Navigator = () => {
         <div className={`flex items-center justify-between flex-wrap h-${offset > 50 ? 12 : 24}`}>
           {/* logos & pages */}
           <div className='flex items-center ml-10'>
-            <a href='/'>
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              href='/'>
               <div className='flex-shrink-0'>
-
                 <img className='h-12 w-12' src='logo.svg' alt='logo' width={48} height={48} />
               </div>
-            </a>
+            </motion.a>
             <div className='hidden md:block'>
-              <div className='ml-10 flex items-baselines space-x-4'>
+              <div
+
+                className='ml-10 flex items-baselines space-x-4'>
                 {links.map((link) => (
                   <Link href={link.href} passHref key={link.label} >
-                    <ButtonWithUnderline text={link.label} offset={offset} />
+                    <ButtonWithUnderline
+                      text={link.label}
+                      offset={offset} />
                   </Link>
                 ))}
               </div>

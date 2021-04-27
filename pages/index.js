@@ -3,7 +3,8 @@ import Banner from '../components/Banner';
 import ListSection from '../components/ListSection';
 import ScrollingLogo from '../components/ScrollingLogo';
 import GridFeature from '../components/GridFeature';
-import Card from '../components/Card';
+import ContactCard from '../components/ContactCard';
+import FeatureCard from '../components/FectureCard';
 import InitialTransition from '../components/InitialTransition';
 import { motion } from 'framer-motion';
 
@@ -13,9 +14,10 @@ export default function Home() {
       <InitialTransition />
       <Banner />
       <ScrollingLogo />
+      <FeatureCard />
       <ListSection />
       <GridFeature />
-      <Card />
+      <ContactCard />
     </motion.section>
   );
 }
