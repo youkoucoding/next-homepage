@@ -74,13 +74,13 @@ const InitialTransition = () => {
           />
         </pattern>
         <text
-          className="text-6xl font-bold font-quicksand"
+          className="text-6xl font-bold font-mono"
           textAnchor="middle"
           x="50%"
           y="50%"
           style={{ fill: "url(#pattern)" }}
         >
-          Slogon
+          Slogan
         </text>
       </motion.svg>
     </motion.div>

@@ -11,7 +11,7 @@ const ButtonWithUnderline = React.forwardRef(({ onClick, href, text, offset }, r
       ref={ref}
     >
       <p
-        className={`text-yellow-500 hover:text-gray-600 cursor-pointer px-3 py-0 font-semibold leading-loose font-ramab border-b-4 hover:border-${offset > 50 ? 'gray' : 'yellow'}-500 border-${offset > 50 ? 'yellow' : 'gray'}-500`}
+        className={`text-yellow-500 transition duration-500 ease-in-out hover:text-gray-600 cursor-pointer px-3 py-0 font-semibold leading-loose font-ramab border-b-2 hover:border-${offset > 50 ? 'gray' : 'yellow'}-500 border-${offset > 50 ? 'yellow-500' : 'opacity-0'}`}
       >{text}</p>
     </motion.a>
   );

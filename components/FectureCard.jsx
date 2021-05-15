@@ -7,7 +7,7 @@ const FeatureCard = () => {
           fill='none'
           viewBox='0 0 24 24'
           stroke='currentColor'
-          class='h-10 w-10 mx-auto bg-primitive-light p-2 rounded-lg text-primitive-dark'
+          className='h-10 w-10 mx-auto bg-primitive-light p-2 rounded-lg text-primitive-dark'
         >
           <path
             stroke-linecap='round'
@@ -31,7 +31,7 @@ const FeatureCard = () => {
           fill='none'
           viewBox='0 0 24 24'
           stroke='currentColor'
-          class='h-10 w-10 mx-auto bg-primitive-light p-2 rounded-lg text-primitive-dark'
+          className='h-10 w-10 mx-auto bg-primitive-light p-2 rounded-lg text-primitive-dark'
         >
           <path
             stroke-linecap='round'
@@ -61,7 +61,7 @@ const FeatureCard = () => {
           fill='none'
           viewBox='0 0 24 24'
           stroke='currentColor'
-          class='h-10 w-10 mx-auto bg-primitive-light p-2 rounded-lg text-primitive-dark'
+          className='h-10 w-10 mx-auto bg-primitive-light p-2 rounded-lg text-primitive-dark'
         >
           <path
             stroke-linecap='round'
