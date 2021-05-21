@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState, useEffect } from 'react';
 import ButtonWithUnderline from './ButtonWithUnderline';
 import { motion } from 'framer-motion';
+import { Link as ScrollLink } from 'react-scroll';
 
 export const links = [
   {
@@ -65,16 +66,20 @@ const MenuButton = ({ toggleMenu, showMenu }) => (
   </button>
 );
 
-const MobileMenu = () => (
+const MobileMenu = ({ toggleMenu }) => (
   <div className='md:hidden'>
     <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
       {links.map((link) => (
         <Link href={link.href} key={link.label}>
-          <a className='text-gray-500 block px-3 py-2 text-base font-medium'>
+          <a
+            className='text-gray-500 block px-3 py-2 text-base font-medium'
+            onClick={toggleMenu}
+          >
             {link.label}
           </a>
         </Link>
       ))}
+
     </div>
   </div>
 );
@@ -96,7 +101,7 @@ const Navigator = () => {
   return (
     <div className='sticky top-0 left-0 right-0 z-50'>
       <nav className={`max-w-full mx-auto px-4 sm:px-6 lg:px-8  transition-colors duration-400 ease-linear  ${offset > 50 ? `bg-yellow-300 shadow-lg` : `bg-white`}`}>
-        <div className={`flex items-center justify-between flex-wrap h-${offset > 50 ? 12 : 24}`}>
+        <div className={`flex items-center justify-between flex-wrap ${offset > 50 ? 'h-12' : 'h-24'}`}>
           {/* logos & pages */}
           <div className='flex items-center ml-10'>
             <motion.a
@@ -118,6 +123,16 @@ const Navigator = () => {
                       offset={offset} />
                   </Link>
                 ))}
+                <ScrollLink
+                  activeClass="active"
+                  to="feature"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                ><ButtonWithUnderline
+                    text='Feature'
+                  /></ScrollLink>
               </div>
             </div>
           </div>
@@ -136,7 +151,7 @@ const Navigator = () => {
             <MenuButton showMenu={showMenu} toggleMenu={toggleMenu} />
           </div>
         </div>
-        {showMenu ? <MobileMenu /> : null}
+        {showMenu ? <MobileMenu toggleMenu={toggleMenu} /> : null}
       </nav>
     </div>
   );
